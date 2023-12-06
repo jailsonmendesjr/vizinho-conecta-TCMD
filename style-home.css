@@ -1,0 +1,136 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+}
+
+header {
+  background-color: #111;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 240px;
+}
+nav {
+  margin-top: 60px;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.botoes a {
+  display: block;
+  background-color: #eba10f;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.botoes a:hover {
+  background-color: #d4980a;
+  transition: 0.3s;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.principal {
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0cap;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+  margin-left: 180px;
+}
+
+.conteudo h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 80px;
+  max-width: 16ch;
+}
+
+.cor {
+  color: #eba10f;
+}
+
+.conteudo p {
+  color: #404040;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 42px;
+  max-width: 44ch;
+  margin-bottom: 4px;
+}
+
+.conteudo a {
+  display: flex;
+  width: max-content;
+  background-color: #eba10f;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  gap: 10px;
+}
+
+.conteudo a:hover {
+  background-color: #d4980a;
+  transition: 0.3s;
+}
+
+
+/*
+branch protegida
+https://www.youtube.com/watch?v=TYPXGXzL09Q
+minutagem - ele não fala
+*/
