@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style-home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto 30px; /* Centraliza o container */
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            background-color: #ccc; /* Cor de fundo cinza claro */
+        }
+
+        h2 {
+            color: #000;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: ".";
+            color: #ffcc00;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .form-group {
+            width: 48%;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+            border-radius: 4px;
+            background-color: #f0f0f0;
+        }
+
+        #checkbox-container {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        #checkbox-label {
+            margin-left: 10px;
+            color: #333;
+        }
+
+        button {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            display: block;
+            width: auto;
+            margin: 0 auto;
+        }
+
+        #checkbox-container {
+            text-align: center;
+        }
+
+        /* Adicionando estilo ao header */
+        header {
+            text-align: left; /* Alinha o texto à esquerda */
+            padding: 20px;
+            background-color: #000000; /* Cor de fundo do header */
+            color: #fff; /* Cor do texto no header */
+        }
+
+        nav {
+            float: right; /* Move a navegação para a direita */
+        }
+
+        ul.botoes {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.botoes li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        ul.botoes li a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./img/logo-transparent.png" alt="Logo Vizinho Conecta">
+    
+        <nav>
+          <ul class="botoes">
+            <li><a href="home-page.html">Página Inicial</a></li>
+            <li><a href="cadastro.html">Cadastre-se</a></li>
+            <li><a href="saiba-mais.html">Saiba Mais</a></li>
+            <li><a href="fale-conosco.html">Fale Conosco</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Preencha seus dados</h2>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div id="checkbox-container">
+                <input type="checkbox" id="aceito" name="aceito" required>
+                <label id="checkbox-label" for="aceito">Li e aceito os termos e condições</label>
+            </div>
+
+            <button type="submit">Efetuar cadastro</button>
+        </form>
+    </div>
+</body>
+</html>
