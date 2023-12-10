@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style-home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  img {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  p {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  ul,
+  li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+  }
+
+  header {
+    background-color: #111;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header img {
+    width: 240px;
+  }
+  nav {
+    margin-top: 60px;
+  }
+
+  .botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .botoes a {
+    display: block;
+    background-color: #eba10f;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  .botoes a:hover {
+    background-color: #d4980a;
+    transition: 0.3s;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+    margin-left: 180px;
+  }
+
+  .conteudo h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 80px;
+    max-width: 16ch;
+  }
+
+    .principal {
+      background-image: url('img/fundo.png'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .conteudo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .informacoes {
+      background-color: #111111; 
+      color: #fff; 
+      padding: 40px;
+      text-align: center;
+    }
+
+    .informacoes ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .informacoes ul li {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+
+ 
+
+
+</style>
+  <title>Página Inicial - Vizinho Conecta</title>
+
+</head>
+
+<body>
+
+  <header>
+    <img src="./img/logo-transparent.png" alt="Logo Vizinho Conecta">
+
+    <nav>
+      <ul class="botoes">
+        <li><a href="home-page.html">Página Inicial</a></li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+        <li><a href="saiba-mais.html">Saiba Mais</a></li>
+        <li><a href="fale-conosco.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="principal">
+    <div class="conteudo">
+      <div class="informacoes">
+        <h2>Nosso Contato</h2>
+        <ul>
+          <li><img src="img/endereco.png" alt="Ícone Endereço" width="50vh">Av. Reta da Penha, 200. Vitória - ES, Brasil</li>
+          <li><img src="img/email.png" alt="Ícone Email" width="50vh">vizinhoconecta@email.com</li>
+          <li><img src="img/telefone.png" alt="Ícone Telefone" width="50vh">+55 (27) 99999-9999</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+
+
+
+</body>
+
+</html>
